@@ -1,0 +1,42 @@
+name: dockercompose2783006203844401913
+services:
+  securityserviceslogging.api:
+    build:
+      context: C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging
+      dockerfile: SecurityServicesLogging.API\Dockerfile
+    depends_on:
+      sqlserver:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: securityservicesloggingapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+  sqlserver:
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "123456"
+    expose:
+    - "1433"
+    hostname: sqlserver
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 1433
+      published: "11433"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: c:\dados\volumes\mssql
+      target: /var/opt/mssql3
+      bind:
+        create_host_path: true
+networks:
+  default:
+    name: dockercompose2783006203844401913_default

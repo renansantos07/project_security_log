@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "XuVK5mndgSeRP9YW6PRMFKGGJOHyPNZS2IS+RCxyFQs=",
+  "Source": "SecurityServicesLogging.API",
+  "BasePath": "_content/SecurityServicesLogging.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

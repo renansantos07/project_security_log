@@ -1,0 +1,18 @@
+name: dockercompose2783006203844401913
+services:
+  securityserviceslogging.api:
+    build:
+      context: C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging
+      dockerfile: SecurityServicesLogging.API\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: securityservicesloggingapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose2783006203844401913_default

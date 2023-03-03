@@ -1,0 +1,102 @@
+name: dockercompose2783006203844401913
+services:
+  securityserviceslogging.api:
+    build:
+      context: C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging
+      dockerfile: SecurityServicesLogging.API\Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: SecurityServicesLogging.API
+      target: base
+    container_name: SecurityServicesLogging.API
+    depends_on:
+      sqlserver:
+        condition: service_started
+    entrypoint:
+    - tail
+    - -f
+    - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: securityservicesloggingapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net6.0/SecurityServicesLogging.API.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+    tty: true
+    volumes:
+    - type: bind
+      source: C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.API
+      target: /app
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging
+      target: /src
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\renan.s.santos\vsdbg\vs2017u5
+      target: /remote_debugger
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\renan.s.santos\.nuget\packages\
+      target: /root/.nuget/packages
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages
+      target: /root/.nuget/fallbackpackages
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\renan.s.santos\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\renan.s.santos\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+  sqlserver:
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "123456"
+    expose:
+    - "1433"
+    hostname: sqlserver
+    image: microsoft/mssql-server-linux:2017-latest
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 1433
+      published: "11433"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: c:\dados\volumes\mssql
+      target: /var/opt/mssql3
+      bind:
+        create_host_path: true
+networks:
+  default:
+    name: dockercompose2783006203844401913_default

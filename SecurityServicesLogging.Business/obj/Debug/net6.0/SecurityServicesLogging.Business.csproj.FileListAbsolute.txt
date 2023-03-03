@@ -1,0 +1,12 @@
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Business\bin\Debug\net6.0\SecurityServicesLogging.Business.deps.json
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Business\bin\Debug\net6.0\SecurityServicesLogging.Business.dll
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Business\bin\Debug\net6.0\SecurityServicesLogging.Business.pdb
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Business\obj\Debug\net6.0\SecurityServicesLogging.Business.csproj.AssemblyReference.cache
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Business\obj\Debug\net6.0\SecurityServicesLogging.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Business\obj\Debug\net6.0\SecurityServicesLogging.Business.AssemblyInfoInputs.cache
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Business\obj\Debug\net6.0\SecurityServicesLogging.Business.AssemblyInfo.cs
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Business\obj\Debug\net6.0\SecurityServicesLogging.Business.csproj.CoreCompileInputs.cache
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Business\obj\Debug\net6.0\SecurityServicesLogging.Business.dll
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Business\obj\Debug\net6.0\refint\SecurityServicesLogging.Business.dll
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Business\obj\Debug\net6.0\SecurityServicesLogging.Business.pdb
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Business\obj\Debug\net6.0\ref\SecurityServicesLogging.Business.dll

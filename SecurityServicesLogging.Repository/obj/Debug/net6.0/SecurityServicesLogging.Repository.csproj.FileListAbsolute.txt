@@ -1,0 +1,15 @@
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Repository\bin\Debug\net6.0\SecurityServicesLogging.Repository.deps.json
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Repository\bin\Debug\net6.0\SecurityServicesLogging.Repository.dll
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Repository\bin\Debug\net6.0\SecurityServicesLogging.Repository.pdb
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Repository\bin\Debug\net6.0\SecurityServicesLogging.Business.dll
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Repository\bin\Debug\net6.0\SecurityServicesLogging.Business.pdb
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Repository\obj\Debug\net6.0\SecurityServicesLogging.Repository.csproj.AssemblyReference.cache
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Repository\obj\Debug\net6.0\SecurityServicesLogging.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Repository\obj\Debug\net6.0\SecurityServicesLogging.Repository.AssemblyInfoInputs.cache
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Repository\obj\Debug\net6.0\SecurityServicesLogging.Repository.AssemblyInfo.cs
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Repository\obj\Debug\net6.0\SecurityServicesLogging.Repository.csproj.CoreCompileInputs.cache
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Repository\obj\Debug\net6.0\SecurityServicesLogging.Repository.csproj.CopyComplete
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Repository\obj\Debug\net6.0\SecurityServicesLogging.Repository.dll
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Repository\obj\Debug\net6.0\refint\SecurityServicesLogging.Repository.dll
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Repository\obj\Debug\net6.0\SecurityServicesLogging.Repository.pdb
+C:\Users\renan.s.santos\Documents\projects\SecurityServicesLogging\SecurityServicesLogging\SecurityServicesLogging.Repository\obj\Debug\net6.0\ref\SecurityServicesLogging.Repository.dll

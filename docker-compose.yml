@@ -1,0 +1,41 @@
+version: '3.4'
+
+services:
+  securityserviceslogging.api:
+    image: ${DOCKER_REGISTRY-}securityservicesloggingapi
+    build:
+      context: .
+      dockerfile: SecurityServicesLogging.API\Dockerfile
+    ports:
+      - 5000:5000
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5000
+    depends_on:
+      - sqlserver
+  frontend:
+    container_name: frontend
+    build: ./security-app
+    volumes:
+      - './:/app'
+      - '/app/node_modules'
+    ports:
+      - 3000:3000
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    command: npm start
+    depends_on:
+      - securityserviceslogging.api
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    hostname: 'sqlserver'
+    environment:
+      ACCEPT_EULA: 'Y'
+      SA_PASSWORD: "Secdev@1234"
+    volumes:
+      - c:\dados\volumes\mssql:/var/opt/mssql3
+    ports:
+      - '11433:1433'
+    expose:
+      - 1433
